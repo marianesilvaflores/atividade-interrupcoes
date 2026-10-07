@@ -104,3 +104,11 @@ themeButton.addEventListener('click', () => {
   try { localStorage.setItem('doce-theme', dark ? 'dark' : 'light'); } catch {}
 });
 try { setTheme(localStorage.getItem('doce-theme') === 'dark'); } catch { setTheme(false); }
+
+document.querySelector('#clear-filters').addEventListener('click', () => {
+  menuState.category = 'todos'; menuState.search = ''; menuState.favoritesOnly = false;
+  document.querySelector('#search').value = '';
+  document.querySelector('#favorites-only').setAttribute('aria-pressed', 'false');
+  document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === 'todos')));
+  updateProducts();
+});
