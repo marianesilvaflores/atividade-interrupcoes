@@ -114,3 +114,8 @@ document.querySelector('#clear-filters').addEventListener('click', () => {
   document.querySelector('#menu-status').textContent = 'Filtros limpos. 3 opções encontradas.';
   document.querySelector('#search').focus();
 });
+
+document.querySelectorAll('[data-grams]').forEach(button => button.addEventListener('click', () => {
+  weightInput.value = button.dataset.grams;
+  form.requestSubmit();
+}));
