@@ -114,3 +114,15 @@ document.querySelector('#clear-filters').addEventListener('click', () => {
   document.querySelector('#menu-status').textContent = 'Filtros limpos. 3 opções encontradas.';
   document.querySelector('#search').focus();
 });
+
+document.querySelectorAll('[data-grams]').forEach(button => button.addEventListener('click', () => {
+  weightInput.value = button.dataset.grams;
+  form.requestSubmit();
+  updatePortions();
+}));
+
+function updatePortions() {
+  document.querySelectorAll('[data-grams]').forEach(button => button.setAttribute('aria-pressed', String(Number(weightInput.value) === Number(button.dataset.grams))));
+}
+weightInput.addEventListener('input', updatePortions);
+updatePortions();

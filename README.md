@@ -25,3 +25,6 @@ Imagens geradas com IA da OpenAI para a sorveteria original. Fontes DM Sans e Fr
 
 
 **Limpar filtros:** restaura busca, categoria e filtro de favoritos sem apagar os produtos favoritos salvos. Anuncia a limpeza e leva o foco à busca.
+
+
+**Porções rápidas:** os botões de 100 g, 200 g e 300 g preenchem o peso e calculam o total imediatamente. O estado selecionado acompanha também a digitação manual.

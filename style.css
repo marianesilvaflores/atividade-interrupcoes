@@ -129,3 +129,8 @@ select:focus-visible { outline:3px solid var(--pink); outline-offset:3px; }
 
 /* Corrige texto branco sobre fundo quase branco no tema escuro. */
 [data-theme="dark"] .skip-link { background:#fff2e8; color:#321e28; }
+
+.portions { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; }
+.portions button { min-height:44px; padding:10px 16px; background:transparent; color:var(--chocolate); border:1px solid var(--line); }
+.portions button[aria-pressed="true"] { background:var(--chocolate); color:var(--cream); }
+[data-theme="dark"] .portions button[aria-pressed="true"] { background:#ffa3bf; color:#321e28; }
