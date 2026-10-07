@@ -126,3 +126,6 @@ select:focus-visible { outline:3px solid var(--pink); outline-offset:3px; }
 
 #clear-filters { border:1px solid var(--line); background:transparent; color:var(--chocolate); }
 #clear-filters:hover { background:var(--line); }
+
+/* Corrige texto branco sobre fundo quase branco no tema escuro. */
+[data-theme="dark"] .skip-link { background:#fff2e8; color:#321e28; }
