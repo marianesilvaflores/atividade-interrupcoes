@@ -111,4 +111,6 @@ document.querySelector('#clear-filters').addEventListener('click', () => {
   document.querySelector('#favorites-only').setAttribute('aria-pressed', 'false');
   document.querySelectorAll('[data-filter]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.filter === 'todos')));
   updateProducts();
+  document.querySelector('#menu-status').textContent = 'Filtros limpos. 3 opções encontradas.';
+  document.querySelector('#search').focus();
 });
