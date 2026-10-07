@@ -28,3 +28,11 @@ Imagens geradas com IA da OpenAI para a sorveteria original. Fontes DM Sans e Fr
 
 
 **Porções rápidas:** os botões de 100 g, 200 g e 300 g preenchem o peso e calculam o total imediatamente. O estado selecionado acompanha também a digitação manual.
+
+## Entrega
+
+- [Histórico das interrupções e verificações](docs/historico.md)
+- [PR #1: Limpar filtros](https://github.com/marianesilvaflores/atividade-interrupcoes/pull/1)
+- [PR #2: Porções rápidas](https://github.com/marianesilvaflores/atividade-interrupcoes/pull/2)
+
+Ambos os PRs foram integrados na master, sem revisão de colaborador. As quatro branches de tarefas foram preservadas para conferência.
