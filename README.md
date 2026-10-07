@@ -22,3 +22,6 @@ Consulte o histórico com `git log --graph --oneline --all`. O arquivo `docs/his
 ## Créditos
 
 Imagens geradas com IA da OpenAI para a sorveteria original. Fontes DM Sans e Fraunces via Google Fonts. Preços ilustrativos; o site não envia pedidos nem processa pagamentos.
+
+
+**Limpar filtros:** restaura busca, categoria e filtro de favoritos sem apagar os produtos favoritos salvos. Anuncia a limpeza e leva o foco à busca.
